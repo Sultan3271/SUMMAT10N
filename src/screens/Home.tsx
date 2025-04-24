@@ -107,10 +107,12 @@ const Home = ({ navigation }: any) => {
 		// PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS);
 		displayWelcomeMessage();
 		console.log(AsyncStorage.getItem('userID'),"this isss")
-		getProfile(getUserId())
-			.then(profile => {
-				console.log(JSON.stringify(profile), "yeh leh");
-			})
+		// console.log("getUserId():",getUserId());
+		// getProfile(getUserId())
+		// 	.then(profile => {
+		// 		console.log(JSON.stringify(profile), "yeh leh");
+		// 	})
+		
 		checkIfNameExist();
 		// messaging().onNotificationOpenedApp(remoteMessage => {
 		// 	console.log('Notification caused app to open from background state:', JSON.stringify(remoteMessage));
